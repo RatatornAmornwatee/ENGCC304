@@ -1,5 +1,5 @@
 ### CODE:
-<button>Move to file</button>
+<a href="https://github.com/RatatornAmornwatee/ENGCC304/blob/main/Lab/Lab1/main.c">Move to file</a>
 ```c
 #include <stdio.h>
 
