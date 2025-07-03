@@ -18,4 +18,4 @@ int main() {
 ```
 
 ### OUTPUT
-<image href="https://github.com/RatatornAmornwatee/ENGCC304/blob/main/Lab/Lab1/result.png?raw=true"></image>
+<image src="https://github.com/RatatornAmornwatee/ENGCC304/blob/main/Lab/Lab1/result.png?raw=true"></image>
