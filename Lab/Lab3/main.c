@@ -1,21 +1,38 @@
 #include <stdio.h>
+#include <math.h>
+
+int isPrime( int num ) {
+  if( num < 2 ) return 0 ;
+  for ( int i = 2 ; i <= sqrt( num ) ; i++ ) {
+    if (num % i == 0) return 0 ;
+  }//end for
+  return 1 ;
+}//end function
 
 int main() {
-  char emplyeeid[10] ;
-  int workinghrs ;
-  float salary ;
+  int n ;
+  printf( "Enter N : " ) ;
+  scanf( "%d" , &n ) ;
 
-  printf( "Input the Employees ID(Max. 10 chars): \n" ) ;
-  scanf( "%s" , &emplyeeid ) ;
+  int arr[ n ] ;
+  for( int i = 0 ; i < n ; i++ ) {
+    printf( "Enter value[%d] : " , i );
+    scanf( "%d" , &arr[ i ] );
+  }//end for
 
-  printf( "Input the working hrs: \n" ) ;
-  scanf( "%d" , &workinghrs ) ;
-
-  printf( "Salary amount/hr: \n" ) ;
-  scanf( "%f" , &salary ) ;
-
-  printf( "Employees ID = %s \n" , emplyeeid ) ;
-  printf( "Salary = U$ %.2f" , workinghrs * salary ) ;
+  printf("Index:  ");
+  for (int i = 0 ; i < n ; i++ ) {
+    printf( "%2d " , i );
+  }//end for
+  printf("\n");
   
+  printf("Array:  ");
+  for(int i = 0 ; i < n ; i++ ) {
+    if ( isPrime( arr[ i ] ) )
+      printf( "%2d " , arr[ i ] );
+    else
+      printf( "%2s " , "#" ); 
+  }//end for
+  printf( "\n" ) ;
   return 0 ;
 }//end function
