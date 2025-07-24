@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-	char emplyeeid[10] ;
+char emplyeeid[10] ;
 	int workinghrs ;
 	float salary ;
 
