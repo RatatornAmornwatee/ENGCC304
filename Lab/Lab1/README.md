@@ -15,4 +15,4 @@ int main() {
 }//end main function
 ```
 # OUTPUT:
-<img src="https://github.com/RatatornAmornwatee/ENGCC304/edit/main/Lab/Lab1/output.png"></img>
+<img src="https://github.com/RatatornAmornwatee/ENGCC304/blob/main/Lab/Lab1/output.png?raw=true"></img>
