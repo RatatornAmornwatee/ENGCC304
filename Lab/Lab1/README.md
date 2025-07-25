@@ -1,3 +1,5 @@
+<h1>CODE:</h1>
+```
 ```c
 #include <stdio.h>
 
@@ -13,3 +15,5 @@ int main() {
   printf( "Age = %d \n" , Age ) ;
 }//end main function
 ```
+```
+<h1>OUTPUT:</h1>
