@@ -2,31 +2,31 @@
 #include <math.h>
 
 int isPrime( int num ) {
-	if( num < 2 ) return 0 ;
-	for ( int i = 2 ; i <= sqrt( num ) ; i++ ) {
-		if (num % i == 0) return 0 ;
-	}//end for
-	return 1 ;
-  }//end function
+    if( num < 2 ) return 0 ;
+    for ( int i = 2 ; i <= sqrt( num ) ; i++ ) {
+        if ( num % i == 0 ) return 0 ;
+    }//end for
+    return 1 ;
+}//end function
 
-  int main() {
-	int n ;
+int main() {
+    int n ;
     printf( "Enter N : " ) ;
     scanf( "%d" , &n ) ;
 
     int arr[ n ] ;
     for( int i = 0 ; i < n ; i++ ) {
-		printf( "Enter value[%d] : " , i );
+	printf( "Enter value[%d] : " , i );
         scanf( "%d" , &arr[ i ] );
     }//end for
 
-    printf("Index:  ");
+    printf( "Index:  " );
     for (int i = 0 ; i < n ; i++ ) {
         printf( "%2d " , i );
     }//end for
-    printf("\n");
+    printf( "\n" );
   
-    printf("Array:  ");
+    printf( "Array:  " );
     for(int i = 0 ; i < n ; i++ ) {
         if ( isPrime( arr[ i ] ) )
             printf( "%2d " , arr[ i ] );
