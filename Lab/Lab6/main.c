@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-  int N = -1 ;
+  int N;
   printf( "Enter value: \n" ) ;
   scanf( "%d" , &N ) ;
 
@@ -11,12 +11,10 @@ int main() {
       printf( "%d " , i ) ;
     }//end for
   }
-  else if ( N % 2 > 0) {
+  else{
     for( int i = 1 ; i <= N ; i+=2 ) {
       printf( "%d " , i ) ;
     }// end for
-  }else{
-    printf( "please enter number only." );
   }//end if
 
   return 0 ;
