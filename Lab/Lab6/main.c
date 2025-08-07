@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-  int N;
+  int N ;
   printf( "Enter value: \n" ) ;
   scanf( "%d" , &N ) ;
 
@@ -19,3 +19,4 @@ int main() {
 
   return 0 ;
 }//end function
+
