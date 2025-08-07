@@ -31,17 +31,18 @@ int main() {
           max = guess ;
         }else if( guess < expected ) {
           score -= 10 ;
-          printf( "\nSorry, the winning number is HIGHER than %d. (Score=%d)\n" , guess , score );
+          printf( "\nSorry, the winning number is HIGHER than %d. (Score=%d)\n" , guess , score ) ;
           min = guess ;
         }else{
-          printf( "\nThat is correct! The winning number is %d.\n" , expected );
+          printf( "\nThat is correct! The winning number is %d.\n" , expected ) ;
           break ;
-        }
-      } while( score > 0 );
+        }//end if
+      } while( score > 0 ) ;
       printf( "\nScore this game: %d\n\n" , score ) ;
-    }
+    }//end if
   } while( isplaying == 1 ) ;
 
   return 0 ;
-}
+}//end function
+
 
