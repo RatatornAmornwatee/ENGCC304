@@ -40,7 +40,8 @@ int main() {
       } while( score > 0 );
       printf( "\nScore this game: %d\n\n" , score ) ;
     }
-  }while( isplaying == 1 ) ;
+  } while( isplaying == 1 ) ;
 
   return 0 ;
 }
+
