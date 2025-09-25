@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int score = -1 ;
+    int score ;
     printf( "enter score: \n" ) ;
     scanf( "%d" , &score ) ;
     
@@ -26,4 +26,5 @@ int main() {
     }//end if
 
     return 0 ;
+
 }//end function
