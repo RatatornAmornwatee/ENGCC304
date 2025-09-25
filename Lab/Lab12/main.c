@@ -68,8 +68,18 @@ int main() {
     Grade( Students[ i ].ScoreSub3 ) ;
     Grade( Students[ i ].ScoreSub4 ) ;
     Grade( Students[ i ].ScoreSub5 ) ;
-    printf( "\nAverage Scores: %.1f\n" , Average( Students[ i ].ScoreSub1 , Students[ i ].ScoreSub2 , Students[ i ].ScoreSub3 , Students[ i ].ScoreSub4 , Students[ i ].ScoreSub5 ) ) ;
+    printf( "\nAverage Scores: %.1f\n" , 
+      Average( 
+        Students[ i ].ScoreSub1 ,
+        Students[ i ].ScoreSub2 ,
+        Students[ i ].ScoreSub3 ,
+        Students[ i ].ScoreSub4 ,
+        Students[ i ].ScoreSub5
+      ) 
+    ) ;
   }//end for
+  int a = 0 ;
+  scanf("%d" , &a );
 }//end function
 
 void Grade( int score ) {
